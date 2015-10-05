@@ -1,0 +1,54 @@
+{
+  "name": "t1",
+  "devDependencies": {
+    "babel-plugin-react-transform": "*",
+    "chai": "*",
+    "del": "*",
+    "gulp": "*",
+    "gulp-util": "*",
+    "istanbul": "*",
+    "jsdom": "*",
+    "minimist": "*",
+    "mocha": "*",
+    "node-notifier": "*",
+    "node-sass": "^3.3.3",
+    "react-transform-catch-errors": "*",
+    "react-transform-webpack-hmr": "*",
+    "redbox-react": "*",
+    "sass-loader": "^3.0.0",
+    "webpack": "^1.12.2",
+    "webpack-dev-server": "*"
+  },
+  "dependencies": {
+    "babel": "*",
+    "babel-core": "*",
+    "babel-loader": "*",
+    "babel-plugin-typecheck": "*",
+    "babel-runtime": "*",
+    "bundle-loader": "*",
+    "chunk-manifest-webpack-plugin": "*",
+    "css-loader": "^0.19.0",
+    "exports-loader": "*",
+    "expose-loader": "*",
+    "file-loader": "^0.8.4",
+    "imports-loader": "*",
+    "jquery": "*",
+    "lodash": "*",
+    "react": "*",
+    "react-bootstrap": "^0.25.2",
+    "react-router": "*",
+    "style-loader": "^0.12.4",
+    "superagent": "*",
+    "url-loader": "^0.5.6",
+    "webpack": "*"
+  },
+  "scripts": {
+    "test": "NODE_ENV=test mocha --watch --compilers js:compiler.js 'app/frontend/javascripts/**/*-test.js'",
+    "test-coverage": "istanbul cover node_modules/.bin/_mocha -- --compilers js:compiler.js 'app/frontend/javascripts/**/*-test.js'",
+    "dev": "NODE_ENV=development webpack-dev-server --config config/webpack/development.config.js"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">= 0.10"
+  }
+}
