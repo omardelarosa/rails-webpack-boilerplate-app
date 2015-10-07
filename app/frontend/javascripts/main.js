@@ -4,16 +4,42 @@
 require('expose?jQuery!expose?$!jquery');
 require('expose?React!react/addons');
 
-import * as RX from 'rx-theme';
 import $ from 'jquery';
+import * as RX from 'rx-ui';
 import React from 'react/addons';
 import * as ReactBootstrap from 'react-bootstrap';
+
+var dropdownItems = [
+  {
+    name: "sign out",
+    href: "#"
+  },
+  {
+    name: "profile",
+    href: "#"
+  }
+];
+
+var sidebarItems = [
+  {
+    name: "something 1",
+    href: "#"
+  },
+  {
+    name: "something 2",
+    href: "#"
+  },
+  {
+    name: "something 3",
+    href: "#"
+  }
+];
 
 $(document).ready(function() {
   // define routing
 
   React.render(
-    <RX.Layout/>, 
+    <RX.Layout projectName="Hello" sidebarItems={sidebarItems} dropdownItems={ dropdownItems }/>, 
     document.getElementById('layout-container')
   );
 
