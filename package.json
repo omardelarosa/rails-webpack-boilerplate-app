@@ -4,6 +4,7 @@
     "babel-plugin-react-transform": "*",
     "chai": "*",
     "del": "*",
+    "generator-rails-react-webpack": "^0.4.1",
     "gulp": "*",
     "gulp-util": "*",
     "istanbul": "*",
@@ -17,7 +18,8 @@
     "redbox-react": "*",
     "sass-loader": "^3.0.0",
     "webpack": "^1.12.2",
-    "webpack-dev-server": "*"
+    "webpack-dev-server": "*",
+    "yo": "^1.4.8"
   },
   "dependencies": {
     "babel": "*",
@@ -37,6 +39,7 @@
     "react": "*",
     "react-bootstrap": "^0.25.2",
     "react-router": "*",
+    "rx-ui": "git+https://bitbucket.org/recruitics-ondemand/rx-ui.git",
     "style-loader": "^0.12.4",
     "superagent": "*",
     "url-loader": "^0.5.6",

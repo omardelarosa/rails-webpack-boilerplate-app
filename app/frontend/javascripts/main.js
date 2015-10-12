@@ -31,7 +31,8 @@ var sidebarItems = [
   },
   {
     name: "something 3",
-    href: "#"
+    href: "#",
+    action: "toggle"
   }
 ];
 
